@@ -12,10 +12,12 @@ app.use('/resident', residentController)
 app.use('/flat', flatController)
 app.use('/block', blockController)
 
-app.listen(3002, async () => {
+const port = process.env.PORT || 3002
+
+app.listen(port, async () => {
   try {
     await connect();
-    console.log("listening on port 3002");
+    console.log(`listening on port ${port}`);
   } catch (err) {
     console.log(err.message);
   }
