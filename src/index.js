@@ -5,6 +5,7 @@ const app = express();
 const residentController = require('./controllers/resident.controller')
 const blockController = require('./controllers/block.controller')
 const  flatController= require('./controllers/flat.controller')
+const port = process.env.PORT || 3002
 
 app.use(express.json());
 
@@ -12,7 +13,6 @@ app.use('/resident', residentController)
 app.use('/flat', flatController)
 app.use('/block', blockController)
 
-const port = process.env.PORT || 3002
 
 app.listen(port, async () => {
   try {
