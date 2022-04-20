@@ -1,0 +1,39 @@
+.table_head{
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 40px;
+}
+.table_head,tr,td{
+    border: 2px solid rgb(194, 187, 187);
+    padding: 5px;
+    font-size: large;
+}
+.table_head th{
+    padding: 6px;
+    font-size: larger;
+    color: rgba(16, 199, 206, 0.753);
+}
+tbody tr:hover{
+    background-color: rgb(170, 166, 166);
+    cursor: pointer;
+    color: white;
+}
+
+/* td a{
+    text-decoration: none;
+} */
+/* tr td{
+    width: 100%;
+} */
+.link_div{
+    display: flex;
+    width: 100%;
+    /* justify-content: space-evenly; */
+}
+.flat_div{
+    width: 50%;
+    margin: auto;
+    border: 2px solid purple;
+    margin-top: 55px;
+}
